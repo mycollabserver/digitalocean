@@ -1,0 +1,52 @@
+NGINX Unit is a lightweight dynamic open-source server for diverse web applications; to install it, see here.
+
+Built from scratch, Unit can run web apps in different language versions; fully configurable in runtime
+with zero interruption, it enables on-the-fly granular management for engineering and operations.
+The latest version is 1.16.0, released on March 12, 2020.
+See the changelog here; a GitHub-based roadmap outlines our further plans.
+
+The sources are available under the Apache 2.0 license.
+Key Features
+
+    Configuration updates dynamically via a RESTful JSON API
+    Disparate language versions run simultaneously
+    Application processes scale on demand
+    SSL/TLS is supported seamlessly (OpenSSL 1.0.1 and later)
+    Extensive request routing, load balancing, and static file serving options are available
+    Server-side WebSockets are implemented for Node.js and Java
+    Namespaces enable application isolation
+    HTTP requests can be proxied elsewhere during routing
+
+Supported App Languages
+
+    Assembly
+    Python
+    PHP
+    Go
+    Perl
+    Ruby
+    JavaScript (Node.js)
+    Java
+    
+    
+Install Intructions for Ubunu 16.04
+
+Supported architectures: arm64, i386, x86-64.
+
+   1. Download NGINX’s signing key and add it to apt’s keyring:
+
+    # curl -sL https://nginx.org/keys/nginx_signing.key | apt-key add -
+
+    This eliminates the ‘packages cannot be authenticated’ warnings during installation.
+
+   2. To configure Unit repository, create the following file named /etc/apt/sources.list.d/unit.list:
+
+    deb https://packages.nginx.org/unit/ubuntu/ xenial unit
+    deb-src https://packages.nginx.org/unit/ubuntu/ xenial unit
+
+   3.  Install Unit base package and other packages you would like to use:
+
+    # apt update
+    # apt install unit
+    # apt install unit-dev unit-go unit-jsc8 unit-perl unit-php \
+          unit-python2.7 unit-python3.5 unit-ruby
