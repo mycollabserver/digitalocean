@@ -1,0 +1,24 @@
+Set Static IP Address in Debian / Ubuntu (*****DONE****)
+To setup static IP address in Debian/ Ubuntu, open the following file:
+# nano /etc/network/interfaces
+You may see a line looking like this:
+auto eth0
+iface eth0 inet dhcp
+Change it so it looks like this:
+auto eth0
+iface eth0 inet static 
+  address 192.168.0.100
+  netmask 255.255.255.0
+  gateway 192.168.0.1
+  dns-nameservers 4.4.4.4
+  dns-nameservers 8.8.8.8
+Save the file and then edit /etc/resolv.conf like this:
+# nano /etc/resolv.conf
+nameserver 8.8.8.8 # Replace with your nameserver ip
+nameserver 4.4.4.4 # Replace with your nameserver ip
+Restart the networking on your system with:
+# /etc/init.d/network restart  [On SysVinit]y
+# systemctl restart network    [On SystemD]
+Your static IP address has been configured.
+nameserver 67.207.67.3
+nameserver 67.207.67.2
