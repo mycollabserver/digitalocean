@@ -1,0 +1,13 @@
+output of sudo cat /var/log/nginx/error.log
+
+2020/04/05 07:11:29 [emerg] 1519#1519: "listen" directive is not allowed here in /etc/nginx/sites-enabled/mycollab.in:19
+2020/04/05 07:20:47 [emerg] 3738#3738: "listen" directive is not allowed here in /etc/nginx/sites-enabled/mycollab.in:19
+2020/04/05 07:23:12 [emerg] 4142#4142: "listen" directive is not allowed here in /etc/nginx/sites-enabled/mycollab.in:17
+2020/04/05 07:24:26 [warn] 4364#4364: duplicate value "TLSv1" in /etc/letsencrypt/options-ssl-nginx.conf:10
+2020/04/05 07:24:26 [warn] 4364#4364: duplicate value "TLSv1.1" in /etc/letsencrypt/options-ssl-nginx.conf:10
+2020/04/05 07:24:26 [warn] 4364#4364: duplicate value "TLSv1.2" in /etc/letsencrypt/options-ssl-nginx.conf:10
+2020/04/05 07:24:26 [emerg] 4364#4364: "ssl_prefer_server_ciphers" directive is duplicate in /etc/letsencrypt/options-ssl-nginx.conf:11
+2020/04/05 07:24:30 [warn] 4386#4386: duplicate value "TLSv1" in /etc/letsencrypt/options-ssl-nginx.conf:10
+2020/04/05 07:24:30 [warn] 4386#4386: duplicate value "TLSv1.1" in /etc/letsencrypt/options-ssl-nginx.conf:10
+2020/04/05 07:24:30 [warn] 4386#4386: duplicate value "TLSv1.2" in /etc/letsencrypt/options-ssl-nginx.conf:10
+2020/04/05 07:24:30 [emerg] 4386#4386: "ssl_prefer_server_ciphers" directive is duplicate in /etc/letsencrypt/options-ssl-nginx.conf:11
